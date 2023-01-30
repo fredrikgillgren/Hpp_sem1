@@ -111,5 +111,13 @@ Short circuit: 0,17s user 0,00s system 99% cpu 0,173 total
 ❯ time ./bounds
 ./bounds  0,06s user 0,00s system 97% cpu 0,063 total
 
+❯ gcc -o bounds bounds.c -O3
+❯ ./bounds
+❯ time ./bounds
+./bounds  0,06s user 0,00s system 98% cpu 0,063 total
+❯ gcc -o bounds_slow bounds.c -O3
+❯ time ./bounds_slow
+./bounds_slow  0,06s user 0,00s system 45% cpu 0,132 total
+
 Task 3:
 Ändra i denorms till 1e-49 ger noll som output - Close enough to zero
