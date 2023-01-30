@@ -1,4 +1,4 @@
-./sleepycode
+'./sleepycode
 Calling sleep(), m = 0
 Calling sleep(), m = 1
 Calling sleep(), m = 2
@@ -43,4 +43,64 @@ sys	0m0,004s
 real	0m2,276s
 user	0m1,719s
 sys	0m0,396s
+
+./loop_invariants
+fast
+Done. sum = 649785664285041.375
+
+real	0m1,095s
+user	0m0,362s
+sys	0m0,592s
+
+./loop_invariants
+slow
+Done. sum = 649785664285041.375
+
+real	0m0,889s
+user	0m0,381s
+sys	0m0,508s
+
+./loop_invariants
+slow no opti 
+Done. sum = 649785664285041.375
+
+real	0m1,315s
+user	0m1,024s
+sys	0m0,292s
+
+./loop_invariants
+fast no opti
+Done. sum = 649785664285041.375
+
+real	0m1,278s
+user	0m1,050s
+sys	0m0,228s
+
+./string_loop
+done fast
+
+real	0m0,025s
+user	0m0,025s
+sys	0m0,000s
+
+./string_loop
+done slow 
+
+real	0m1,063s
+user	0m1,059s
+sys	0m0,004s
+
+./array_loop
+zi = 1234
+fast
+real	0m0,003s
+user	0m0,000s
+sys	0m0,003s
+
+./array_loop
+zi = 1234
+slow
+real	0m0,003s
+user	0m0,000s
+sys	0m0,003s
 
