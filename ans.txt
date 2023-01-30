@@ -1,0 +1,46 @@
+./sleepycode
+Calling sleep(), m = 0
+Calling sleep(), m = 1
+Calling sleep(), m = 2
+Calling sleep(), m = 3
+Calling sleep(), m = 4
+     1.0000499600361
+
+real	0m5,674s
+user	0m0,666s
+sys	0m0,004s
+time ./regularcode
+     1.0000499600361
+
+real	0m0,679s
+user	0m0,675s
+sys	0m0,004s
+
+
+./threadedcode
+main thread result :      1.0000499600361
+other thread result:      1.0000499600361
+
+real	0m0,654s
+user	0m1,296s
+sys	0m0,008s
+
+./sleepycode
+Calling sleep(), m = 0
+Calling sleep(), m = 1
+Calling sleep(), m = 2
+Calling sleep(), m = 3
+Calling sleep(), m = 4
+     1.0000499600361
+
+real	0m5,674s
+user	0m0,666s
+sys	0m0,004s
+
+./mallocycode
+     1.0000059952043
+
+real	0m2,276s
+user	0m1,719s
+sys	0m0,396s
+
