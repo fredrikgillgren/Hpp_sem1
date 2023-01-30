@@ -10,14 +10,13 @@ int main(int argc, char **argv)
 
    for (i = 0; i < 50000000; i++)
    {
-      c = d >> 2;
-      b = c >> 15;
+      c = d+d;
+      b = (unsigned)c >> 15;
       a = (unsigned)b << 16;
       d = (unsigned)b << a;
 
       z = 0.33;
-      y = z + z;
-
+      y = z + z ;
       x = y * 0.75;
       z = x * 0.75;
    }
