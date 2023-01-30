@@ -104,3 +104,6 @@ real	0m0,003s
 user	0m0,000s
 sys	0m0,003s
 
+
+Task 3:
+Ändra i denorms till 1e-49 ger noll som output - Close enough to zero
