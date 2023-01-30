@@ -8,7 +8,7 @@ int main(int argc, char **argv)
    float x = 0.1, y = 0.5, z = 0.33;
    printf("%d %d %d %d, %f %f %f\n", a, b, c, d, x, y, z);
 
-   for (i=0; i<50000000; i++)
+   for (i = 0; i < 50000000; i++)
    {
       c = d+d;
       b = (unsigned)c >> 15;
