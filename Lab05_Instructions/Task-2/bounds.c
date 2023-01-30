@@ -9,18 +9,18 @@ int foo(int j, int size);
 
 int main(int argc, char **argv)
 {
-   const int size = 16;
-   const int numiters = 100000000;
-   int i, j;
-   double list[size];
-   for (j = 0; j < numiters; j++)
-   {
-      i = foo(j, size);
-#if FAST
-      if ((unsigned int)i >= (unsigned int)size)
-      {
-         printf("Error: Index out of range");
-      }
+    const int size = 16; 
+    const int numiters = 100000000;
+    int i,j;
+    double list[size];
+    for(j = 0; j<numiters; j++)
+    {
+       i = foo(j,size);
+#if FAST 
+       if ((unsigned int)(i) >= (unsigned int)(size))
+       {
+          printf("Error: Index out of range");
+       }
 #else
       if (i < 0 || i >= size)
       {
