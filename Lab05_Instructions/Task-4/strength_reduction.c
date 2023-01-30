@@ -8,17 +8,18 @@ int main(int argc, char **argv)
    float x = 0.1, y = 0.5, z = 0.33;
    printf("%d %d %d %d, %f %f %f\n", a, b, c, d, x, y, z);
 
-   for (i=0; i<50000000; i++)
+   for (i = 0; i < 50000000; i++)
    {
-      c = d*2;
-      b = c*15;
-      a = b/16;
-      d = b/a;
+      c = d >> 2;
+      b = c >> 15;
+      a = (unsigned)b << 16;
+      d = (unsigned)b << a;
 
       z = 0.33;
-      y = 2*z;
-      x = y / 1.33;
-      z = x / 1.33;
+      y = z + z;
+
+      x = y * 0.75;
+      z = x * 0.75;
    }
    printf("%d %d %d %d, %f %f %f\n", a, b, c, d, x, y, z);
    return 0;
