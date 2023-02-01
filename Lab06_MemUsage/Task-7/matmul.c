@@ -62,14 +62,16 @@ void mul_ijk(int n, int **a, int **b, int **c)
 }
 
 /* jik */
-void mul_jik(int n, int **a, int **b, int **c)
-{
+//rewrite mul_jik, do cache blocking and find the best block size
+
+void mul_jik_block(int n, int **a, int **b, int **c, int block_size)
+{ block_size = 4;
   int i, j, k;
-  for (j=0; j<n; j++) {
-    for (i=0; i<n; i++) {
+  for (j=0; j<n; j+=block_size) {
+    for (i=0; i<n; i+=block_size) {
       int sum = 0;
-      for (k=0; k<n; k++)
-	sum += a[i][k] * b[k][j];
+      for (k=0; k<n; k+=block_size)
+  sum += a[i][k] * b[k][j];
       c[i][j] = sum;
     }
   }
