@@ -49,9 +49,14 @@ int main(int argc, char *argv[])
 
   // Sort list
   double time1 = get_wall_seconds();
+<<<<<<< HEAD
   merge_sort(list_to_sort, N);
   // bubble_sort(list_to_sort, N);
   printf("Sorting list with length %d took %7.3f wall seconds.\n", N, get_wall_seconds() - time1);
+=======
+  bubble_sort(list_to_sort, N);
+  printf("Sorting list with length %d took %7.3f wall seconds.\n", N, get_wall_seconds()-time1);  
+>>>>>>> a8de08238c836a8e7452c426f0f7d38c39412d92
 
   int count7_again = count_values(list_to_sort, N, 7);
   printf("After sort : the number 7 occurs %d times in the list.\n", count7_again);

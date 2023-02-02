@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define FAST 0
+#define FAST 1
 
 /* From A. Fog: Example 14.4. */
 
