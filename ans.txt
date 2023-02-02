@@ -131,59 +131,6 @@ diffFound = 0
 diffFound = 0
 ./memset_slow  0,03s user 0,00s system 8% cpu 0,348 total
 
-<<<<<<< HEAD
-Lab6 task 1 (Bubble sort)
-❯ time ./sort_test 100000 
-N = 100000
-Before sort: the number 7 occurs 95 times in the list.
-Sorting list with length 100000 took   2.109 wall seconds.
-After sort : the number 7 occurs 95 times in the list.
-OK, list is sorted!
-./sort_test 100000  2,10s user 0,01s system 99% cpu 2,115 total
-
-❯ time ./sort_test 1000
-N = 1000
-Before sort: the number 7 occurs 0 times in the list.
-Sorting list with length 1000 took   0.003 wall seconds.
-After sort : the number 7 occurs 0 times in the list.
-OK, list is sorted!
-./sort_test 1000  0,00s user 0,00s system 81% cpu 0,007 total
-
-Merghe sort:
-❯ time ./sort_test 100000
-N = 100000
-Before sort: the number 7 occurs 95 times in the list.
-Sorting list with length 100000 took   0.030 wall seconds.
-After sort : the number 7 occurs 95 times in the list.
-OK, list is sorted!
-./sort_test 100000  0,03s user 0,00s system 96% cpu 0,036 total
-
-❯ time ./sort_test 1000
-N = 1000
-Before sort: the number 7 occurs 0 times in the list.
-Sorting list with length 1000 took   0.000 wall seconds.
-After sort : the number 7 occurs 0 times in the list.
-OK, list is sorted!
-./sort_test 1000  0,00s user 0,00s system 69% cpu 0,004 total
-
-WIth memory leak:
-❯ time ./sort_test 100000
-N = 100000
-Before sort: the number 7 occurs 95 times in the list.
-Sorting list with length 100000 took   0.020 wall seconds.
-After sort : the number 7 occurs 95 times in the list.
-OK, list is sorted!
-./sort_test 100000  0,02s user 0,00s system 94% cpu 0,026 total
-
-Using buffer:
-❯ time ./sort_test 100000
-N = 100000
-Before sort: the number 7 occurs 95 times in the list.
-Sorting list with length 100000 took   0.013 wall seconds.
-After sort : the number 7 occurs 95 times in the list.
-OK, list is sorted!
-./sort_test 100000  0,02s user 0,00s system 87% cpu 0,021 total
-=======
 Lab 6
 
 Task-0
@@ -468,4 +415,3 @@ Version jik, time = 0.022076
 
 
 problem using cache blocking. 
->>>>>>> a8de08238c836a8e7452c426f0f7d38c39412d92
