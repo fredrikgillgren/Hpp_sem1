@@ -1,0 +1,10 @@
+Task 3 
+when changing to 4 there is no real differens
+Task 4 
+About three times faster
+
+task 6
+Ref: time = 0.690353
+Auto-vec: time = 0.667115
+e_sum: 0.000000
+OK
