@@ -130,3 +130,288 @@ diffFound = 0
 ❯ time ./memset_slow
 diffFound = 0
 ./memset_slow  0,03s user 0,00s system 8% cpu 0,348 total
+
+Lab 6
+
+Task-0
+ModifyWithStep8:
+cachetest
+nBytesToAllocate = 102400
+a = 1
+sum = 800000000
+        0.77 real         0.25 user         0.00 sys
+
+cachetest_n10
+nBytesToAllocate = 5120
+a = 1
+sum = 800000000
+        0.32 real         0.11 user         0.00 sys
+
+cachetest_n50
+nBytesToAllocate = 12800
+a = 1
+sum = 800000000
+        0.36 real         0.14 user         0.00 sys
+
+cachetest_n50
+nBytesToAllocate = 25600
+a = 1
+sum = 800000000
+        0.36 real         0.14 user         0.00 sys
+
+cachetest_n100
+nBytesToAllocate = 51200
+a = 1
+sum = 800000000
+        0.36 real         0.14 user         0.00 system
+
+ModifyLow:
+cashetest
+nBytesToAllocate = 5120
+a = 1
+sum = 800000000
+        0.39 real         0.06 user         0.00 sys
+
+cachetest_n10
+nBytesToAllocate = 5120
+a = 1
+sum = 800000000
+        0.11 real         0.10 user         0.00 sys
+
+cachetest_n25
+nBytesToAllocate = 12800
+a = 1
+sum = 800000000
+        0.14 real         0.14 user         0.00 sys
+
+cachetest_n50
+nBytesToAllocate = 25600
+a = 1
+sum = 800000000
+        0.14 real         0.14 user         0.00 sys
+
+cachetest_n100
+nBytesToAllocate = 51200
+a = 1
+sum = 800000000
+        0.14 real         0.14 user         0.00 sys
+
+To answer the next questions it just looks like the time is being cut in half.  
+
+Task-1
+N = 100000
+MERGESORT
+Before sort: the number 7 occurs 95 times in the list.
+Sorting list with length 100000 took   0.037 wall seconds.
+After sort : the number 7 occurs 95 times in the list.
+OK, list is sorted!
+        0.04 real         0.03 user         0.00 sys
+
+
+BUBBLESORT
+N = 100000
+Before sort: the number 7 occurs 95 times in the list.
+Sorting list with length 100000 took   2.097 wall seconds.
+After sort : the number 7 occurs 95 times in the list.
+OK, list is sorted!
+        2.40 real         2.09 user         0.00 sys
+
+Task-2 
+Char:
+N = 100000
+Before sort: the number 7 occurs 1021 times in the list.
+Sorting list with length 100000 took   0.032 wall seconds.
+After sort : the number 7 occurs 1021 times in the list.
+OK, list is sorted!
+        0.03 real         0.03 user         0.00 sys
+
+
+Short int:
+N = 100000
+Before sort: the number 7 occurs 1021 times in the list.
+Sorting list with length 100000 took   0.030 wall seconds.
+After sort : the number 7 occurs 1021 times in the list.
+OK, list is sorted!
+        0.31 real         0.03 user         0.00 sys
+
+int:
+N = 100000
+Before sort: the number 7 occurs 1021 times in the list.
+Sorting list with length 100000 took   0.034 wall seconds.
+After sort : the number 7 occurs 1021 times in the list.
+OK, list is sorted!
+        0.33 real         0.03 user         0.00 sys
+
+long int:
+N = 100000
+Before sort: the number 7 occurs 1021 times in the list.
+Sorting list with length 100000 took   0.030 wall seconds.
+After sort : the number 7 occurs 1021 times in the list.
+OK, list is sorted!
+        0.30 real         0.03 user         0.00 sys
+
+long long:
+N = 100000
+Before sort: the number 7 occurs 1021 times in the list.
+Sorting list with length 100000 took   0.029 wall seconds.
+After sort : the number 7 occurs 1021 times in the list.
+OK, list is sorted!
+        0.15 real         0.03 user         0.00 sys
+
+Task-3
+Using restrict:
+transform_std tests took   0.064 wall seconds.
+transform_opt tests took   0.063 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.29 real         0.28 user         0.00 sys
+
+without restrict:
+transform_std tests took   0.064 wall seconds.
+transform_opt tests took   0.064 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.29 real         0.29 user         0.00 sys
+
+With N1=20:
+transform_std tests took   0.002 wall seconds.
+transform_opt tests took   0.001 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.27 real         0.00 user         0.00 sys
+
+Answer to question: no bigger effect using restrict. 
+
+Task-4
+With restrict:
+transform_std tests took   0.221 wall seconds.
+transform_opt tests took   0.188 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.70 real         0.40 user         0.00 sys
+
+without restrict:
+transform_std tests took   0.220 wall seconds.
+transform_opt tests took   0.188 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.58 real         0.40 user         0.00 sys
+
+Limit ti NP instead of np:
+transform_std tests took   0.229 wall seconds.
+transform_opt tests took   0.188 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.71 real         0.41 user         0.00 sys
+
+with const:
+transform_std tests took   0.225 wall seconds.
+transform_opt tests took   0.047 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.54 real         0.27 user         0.00 sys
+
+In transform_opt func:
+with const:
+transform_std tests took   0.224 wall seconds.
+transform_opt tests took   0.047 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.69 real         0.27 user         0.00 sys
+
+Without const:
+transform_std tests took   0.224 wall seconds.
+transform_opt tests took   0.047 wall seconds.
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+        0.38 real         0.27 user         0.00 sys
+
+No difference.
+BlockSz = 100:
+Task-5
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=5000 took   0.083 wall seconds.
+do_transpose_mod_optimized 1 times for N=5000 took   0.041 wall seconds.
+        0.85 real         0.46 user         0.10 sys
+
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=10000 took   0.338 wall seconds.
+do_transpose_mod_optimized 1 times for N=10000 took   0.182 wall seconds.
+        4.29 real         1.74 user         0.71 sys
+
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=1000 took   0.001 wall seconds.
+do_transpose_mod_optimized 1 times for N=1000 took   0.002 wall seconds.
+        0.23 real         0.02 user         0.00 sys
+
+
+BlockSz = 1000:
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=1000 took   0.001 wall seconds.
+do_transpose_mod_optimized 1 times for N=1000 took   0.002 wall seconds.
+        0.37 real         0.01 user         0.00 sys
+
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=5000 took   0.089 wall seconds.
+do_transpose_mod_optimized 1 times for N=5000 took   0.039 wall seconds.
+        0.79 real         0.46 user         0.10 sys
+
+Checking correctness: max_abs_diff =        0
+OK, result seems correct.
+do_transpose_mod_standard 1 times for N=10000 took   0.303 wall seconds.
+do_transpose_mod_optimized 1 times for N=10000 took   0.144 wall seconds.
+        3.68 real         1.66 user         0.56 sys
+
+Task-6
+without optimized:
+Result sum: 838134976
+Function call counter: 400000000
+        1.24 real         0.86 user         0.00 sys
+
+with optimized:
+Result sum: 838134976
+Function call counter: 20000
+        0.26 real         0.00 user         0.00 sys
+
+Using __attribute__((const)):
+Result sum: 838134976
+Function call counter: 20000
+        0.28 real         0.00 user         0.00 sys
+
+Moving everything into main.c:
+doesnt work.
+
+Task-7
+jik seems to be fastest:
+
+Enter the dimension of matrices n = 10
+Version kij, time = 0.000007
+Version ijk, time = 0.000008
+Version jik, time = 0.000008
+        1.57 real         0.00 user         0.00 sys
+
+Enter the dimension of matrices n = 50
+Version kij, time = 0.001685
+Version ijk, time = 0.001079
+Version jik, time = 0.000890
+        1.55 real         0.00 user         0.00 sys
+
+Enter the dimension of matrices n = 100
+Version kij, time = 0.008203
+Version ijk, time = 0.007048
+Version jik, time = 0.003291
+        1.51 real         0.01 user         0.00 sys
+
+Enter the dimension of matrices n = 200
+Version kij, time = 0.045845
+Version ijk, time = 0.028003
+Version jik, time = 0.022076
+        2.08 real         0.09 user         0.00 sys
+
+
+problem using cache blocking. 
